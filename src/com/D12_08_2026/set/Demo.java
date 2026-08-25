@@ -8,7 +8,7 @@ public class Demo {
 		//and it is not stored duplicate value
 		int hash = "Abhi".hashCode();
 		System.out.println(hash);
-		int hashspread = hash ^ (hash >>> 31);
+		int hashspread = hash ^ (hash >>> 16);
 		int bucket = hashspread & (32 - 1);
 		System.out.println("bucket is :"+bucket);
 		hashSet.add("Abhi");
