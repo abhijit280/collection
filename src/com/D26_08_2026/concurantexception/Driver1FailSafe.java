@@ -5,7 +5,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Driver1FailSafe {
 
 	public static void main(String[] args) {
-		CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();
+		CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();//this clASS is the fail safe which one is not throwing exception in modify something while iteration
 		list.add("abhi");
 		list.add("ashu");
 		list.add("daksh");
