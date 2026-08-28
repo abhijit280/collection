@@ -20,8 +20,12 @@ public class Praticse {
 		Comparator<Products>compareByPrice = (x,y)->Integer.compare(x.prdPrice, y.prdPrice);
 		Comparator<Products>compareById = (x,y)->Integer.compare(x.prdId, y.prdId);
 		Comparator<Products>compareByPrdName = (x,y)->x.prdName.compareTo(y.prdName);
+		
+		
 		Collections.sort(list,compareByPrdName);
+		
 		Iterator<Products> itr = list.iterator();
+		
 		while (itr.hasNext()) {
 			Products prd = itr.next();
 			System.out.println(prd.prdId +" , "+prd.prdName+" , "+prd.prdPrice);
