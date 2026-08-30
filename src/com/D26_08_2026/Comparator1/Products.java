@@ -11,5 +11,9 @@ public class Products {
 		this.prdName = prdName;
 		this.prdPrice = prdPrice;
 	}
+	@Override
+	public String toString() {
+		return "Products [prdId=" + prdId + ", prdName=" + prdName + ", prdPrice=" + prdPrice + "]";
+	}
 	
 }
